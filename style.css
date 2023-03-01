@@ -1,0 +1,109 @@
+body{
+    background-color: #F0F2F5;
+
+ }
+ .main
+ {
+background-color: #F0F2F5;
+     display: flex;
+     justify-content: center;
+    margin: 200px;   
+}
+
+p{
+ margin-right: 200px;
+ font-size: 20px;
+}
+.heading{
+    
+ margin-right: 200px;
+     color:#1877f2  ;
+     font-size: 60px;
+ }
+ 
+ .formsection
+ {
+    border-radius: 6px;
+     background-color: white;
+     padding: 50px;
+     width: 300px;
+     box-shadow: 2px  3px 3px 3px  rgb(0, 0, 0, 0.2) ;
+ }
+ input
+ {
+    background-color: #e8f4fe;
+    padding: 6px 8px;
+ width: 100%;
+height: 35px;
+ /* margin: 5px, 5px,5px, 5px; */
+ border-radius: 5px;
+ 
+
+ 
+ }
+ .content{
+    padding: 0px 0px 20px;
+    font-family:SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+     width: 50%;
+     margin:50px;
+     font-size: 24px;
+ }
+ 
+
+.log{
+ width: 320px;
+ height: 47px;
+background-color: #1877f2;
+ color: white;
+ font-size: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+ border-radius: 6px;
+ border-color:white;
+ padding: 0px 16px;
+ font-weight: bold;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.CreateSection{
+    font-family: Arial, Helvetica, sans-serif;
+ width: 200px;
+ background-color: #42b72a;
+ color: white;
+ font-size: 17px;
+ border-radius: 6px;
+ padding: 0px 16px;
+ text-align: center;
+ cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 48px;
+    position: relative;
+    text-shadow: none;
+    vertical-align: middle;
+    font-weight: bold;
+    transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
+}
+}
+a{
+ text-decoration: none;
+ 
+}
+.forgetsection{
+    text-decoration: none;
+    color: blue;
+}
+footer{
+    text-decoration: none;
+    padding: 60px;
+    height: 36px;
+    margin: 0px 40px;
+    font-size: 15px;
+    background-color: white;
+    color: #737373;
+
+}
+.foot{
+    text-decoration: none;
+    font-size: 14px;
+    color: #737373;
+}

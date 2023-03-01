@@ -1,0 +1,138 @@
+<!-- <?php
+
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="facebook_db";
+
+$conn = new mysqli($servername, $username, $password,$dbname);
+if ($conn){
+
+    echo"Database connection succesfull";
+}
+else{
+    echo"Connection Fail.";
+}
+?>
+<?php
+   if(isset($_POST['submit']))
+   {
+    $firstname=$_POST['firstname'];
+    $secondname=$_POST['secondname'];
+    $email=$_POST['email'];
+    $password=$_POST['password'];
+    $dob=$_POST['dob'];
+    $gender=$_POST['gender'];
+
+    if($firstname!="" && $secondname!="" && $email!="" && $password!="" && $dob!="" && $gender!=""){e
+
+
+        //createQueryis also call_user_method
+
+        $create_query = "INSERT INTO" users (firstname,secondname,email,password,dob,gender) VALUES('$firstname','$secondname','$email','$password','$dob','$gender')
+
+
+        $create_result= mysqli_query($conn,$create_query);
+        if($create_result){
+            ?>
+            <meta http-equiv="refresh" content="0; URL=manageuser.php?msg=cssucess"/>
+            <?php
+ }
+ else{
+    ?>
+
+    <strong> user couldn't be created sucessfully,</strong>
+    <?php
+ }
+    
+} 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-login or signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+       <div class="content">
+             <h1 class="heading">facebook</h1>
+             <p>
+               Connect with friends and the world <br> around you on Facebook.
+              </p>
+         </div>
+
+     <div class="formsection">
+      <form action="">
+      <input type="text" placeholder="Email or Phone" required name="email"><br><br>
+      <input type="password"placeholder="Password" required name ="password"><br><br>
+      <input type="button" value="Log in" class="log" name="log"><br><br>
+      <div style="text-align: center;">
+        <a href="" class="forgetsection">Forgetten Password?</a>
+      </div>
+      <hr>
+      <br>
+      <div style="text-align: center;"> <a href="signup.html"class="CreateSection">Create new account</a></div>
+      
+    </form>
+    </div>
+    
+    </div>
+
+    <footer>
+      English (UK)&nbsp;
+  नेपाली &nbsp;  
+ हिन्दी &nbsp; 
+ Español &nbsp; 
+ Português (Brasil)&nbsp;
+   日本語&nbsp;
+   Français (France)&nbsp;
+   Deutsch&nbsp;
+   Italiano&nbsp;
+   العربية&nbsp;
+   中文(简体)&nbsp;
+   <br>
+   <hr>
+   <div  class="foot">
+    <a href=""  class="foot">SignUp &nbsp;</a>
+   <a href=""  class="foot">Login</a>
+   <a href="" class="foot">Messenger</a>
+   <a href=""  class="foot">Facebook Lite &nbsp;</a>
+   <a href=""  class="foot">Watch&nbsp;</a>
+   <a href=""  class="foot">Places&nbsp;</a>
+   <a href=""  class="foot">Games&nbsp;</a>
+   <a href=""  class="foot">Marketplace&nbsp;</a>
+   <a href=""  class="foot">Meta Pay&nbsp;</a>
+   <a href=""  class="foot">&nbsp;</a>
+   <a href=""  class="foot">Oculus&nbsp;</a>
+   <a href=""  class="foot">Portal&nbsp;</a>
+   <a href=""  class="foot">Instagram&nbsp;</a>
+   <a href=""  class="foot">Bulletin&nbsp;</a>
+   <a href=""  class="foot">Fundraisers&nbsp;</a>
+   <a href=""  class="foot">Services&nbsp;</a>
+   <a href=""  class="foot">Voting Information center&nbsp;</a>
+   <a href=""  class="foot">Privacy Policy&nbsp;</a>
+   <a href=""  class="foot">Privacy Center&nbsp;</a>
+   <a href=""  class="foot">Groups&nbsp;</a>
+   <a href=""  class="foot">About&nbsp;</a>
+   <a href=""  class="foot">Create ad&nbsp;</a>
+   <a href=""  class="foot">Create Page&nbsp;</a>
+    <a href=""  class="foot">Developers&nbsp;</a>
+   <a href=""  class="foot">Careers&nbsp;</a>
+   <a href=""  class="foot">Cookies&nbsp;</a>
+   <a href=""  class="foot">AdChoices&nbsp;</a>
+   <a href=""  class="foot">Terms&nbsp;</a>
+   <a href=""  class="foot">Help&nbsp;</a>
+    <a href=""  class="foot">Contact uploading and non-users &nbsp;</a> 
+
+</div>
+   
+   
+    </footer>
+</body>
+</html>
